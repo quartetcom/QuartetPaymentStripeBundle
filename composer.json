@@ -1,0 +1,31 @@
+{
+    "name": "quartet/payment-stripe-bundle",
+    "type": "symfony-bundle",
+    "description": "",
+    "license": "MIT",
+    "require": {
+        "PHP": "~5.6|~7.0",
+        "symfony/framework-bundle": "^2.7.6|~3.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.6.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Quartet\\Payment\\StripeBundle\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Quartet\\Payment\\StripeBundle\\": "tests"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}

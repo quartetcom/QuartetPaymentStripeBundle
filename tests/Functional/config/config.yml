@@ -1,0 +1,9 @@
+framework:
+  secret: secret
+
+quartet_stripe:
+  api_public: public key
+  api_secret: secret key
+
+quartet_payment_stripe:
+  stripe_service: quartet.stripe

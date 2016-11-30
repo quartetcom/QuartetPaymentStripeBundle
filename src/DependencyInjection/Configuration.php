@@ -19,7 +19,7 @@ class Configuration implements ConfigurationInterface
         $tree = $builder->root('quartet_payment_stripe');
         $tree
             ->children()
-                ->scalarNode('stripe_service')->isRequired()->end()
+                ->scalarNode('stripe_service')->defaultValue('quartet.stripe')->cannotBeEmpty()->end()
             ->end()
         ;
 

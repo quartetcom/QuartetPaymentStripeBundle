@@ -20,6 +20,7 @@ class Configuration implements ConfigurationInterface
         $tree
             ->children()
                 ->scalarNode('stripe_service')->defaultValue('quartet.stripe')->cannotBeEmpty()->end()
+                ->scalarNode('logger')->end()
             ->end()
         ;
 

@@ -1,6 +1,20 @@
 framework:
   secret: secret
 
+doctrine:
+  dbal:
+    driver: pdo_sqlite
+    path:   "%kernel.cache_dir%/test.db.cache"
+
+  orm:
+    auto_generate_proxy_classes: "%kernel.debug%"
+    entity_managers:
+      default:
+        auto_mapping: true
+
+jms_payment_core:
+  secret: "%kernel.secret%"
+
 quartet_stripe:
   api_public: public key
   api_secret: secret key

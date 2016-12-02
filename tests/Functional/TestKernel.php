@@ -4,6 +4,8 @@
 namespace Quartet\Payment\StripeBundle\Functional;
 
 
+use Doctrine\Bundle\DoctrineBundle\DoctrineBundle;
+use JMS\Payment\CoreBundle\JMSPaymentCoreBundle;
 use Quartet\Payment\StripeBundle\QuartetPaymentStripeBundle;
 use Quartet\StripeBundle\QuartetStripeBundle;
 use Symfony\Bundle\FrameworkBundle\FrameworkBundle;
@@ -19,6 +21,8 @@ class TestKernel extends Kernel
     {
         return [
             new FrameworkBundle(),
+            new DoctrineBundle(),
+            new JMSPaymentCoreBundle(),
             new QuartetStripeBundle(),
             new QuartetPaymentStripeBundle(),
         ];

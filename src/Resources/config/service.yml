@@ -1,0 +1,9 @@
+services:
+  quartet.payment.stripe_plugin:
+    public: false
+    class: Quartet\Payment\StripeBundle\Plugin\StripePlugin
+    arguments:
+      - ~ # stripe api client
+      - ~ # logger
+    tags:
+      - { name: payment.plugin }
